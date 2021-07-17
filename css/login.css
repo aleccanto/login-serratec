@@ -1,0 +1,90 @@
+/*
+    Cores:
+        Escritas em inglês
+        RGB
+        Hexadecimal
+        HSL
+*/
+/*
+body {
+    background-image: url('https://scontent.fcfb3-1.fna.fbcdn.net/v/t1.6435-9/72529197_107949483952167_2594964427870568448_n.png?_nc_cat=107&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=kTMNJfPBgd0AX-W2nOQ&_nc_ht=scontent.fcfb3-1.fna&oh=28600d75304d9505aca80aea8779bd12&oe=60CB2222');
+    background-repeat: no-repeat;
+    background-size: 100%; 
+}
+*/
+
+.box-login {
+    max-width: 400px;
+    border: 1px solid var(--cor-borda);
+    margin: auto;
+    margin-top: 50px;
+    padding: 40px;
+    /* Coloca sombra em volta da pessoa. */
+    box-shadow: 0 0 10px 0 rgb(50 50 50 / 82%);
+    background-color: var(--cor-secundaria);
+}
+
+.logo {
+    text-align: center;
+    color: var(--cor-principal);
+    /* hexadecimal com # */
+    font-size: 30px;
+    text-shadow: 5px 5px 5px var(--cor-borda);
+
+}
+
+.grupo {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+input,
+#btn {
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+
+}
+
+#btn {
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    border: 0;
+    padding: 10px;
+    /*Coloca a 'mãozinha' no botão por cima*/
+    cursor: pointer;
+}
+
+input {
+    border: 1px solid var(--cor-principal);
+}
+
+input:focus {
+    /*     
+    outline-width: 2px;
+    outline-style: hidden;
+    outline-color: var(--cor-terciaria); 
+    outline: 1px auto var(--cor-terciaria);
+    */
+    border: 1px solid var(--cor-terciaria);
+
+}
+
+input::placeholder {
+    color: var(--cor-principal);
+}
+
+/* Qualquer link que estiver dentro do grupo, vai aplicar o vermelho */
+.grupo.grupo-final {
+    text-align: right;
+}
+
+.grupo>a {
+    /*Usa pra dizer tudos que forem links e estiverem dentro da classe grupo.*/
+    color: var(--cor-principal);
+    font-size: 12px;
+    /*Remove sublinhado*/
+    text-decoration: none;
+    /*Especifica o tamanho da espresura.*/
+    font-weight: 500;
+}

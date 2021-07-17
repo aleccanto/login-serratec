@@ -1,0 +1,65 @@
+.box-recuperacao {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 40px;
+    text-align: center;
+    border: 2px solid var(--cor-borda);
+    box-shadow: 0 0 10px 0 rgb(50 50 50 / 82%);
+    background-color: white;
+}
+
+img {
+    width: 25%;
+    height: 25%;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo>h1 {
+    font-size: 20px;
+}
+
+#btn {
+    margin: 20px;
+    max-width: 150px;
+}
+
+#btn::after {
+    text-shadow: 3px 3px 3px var(--cor-borda);
+}
+
+.opcoes>a {
+    text-decoration: none;
+    color: black;
+}
+
+.opcoes {
+    padding-bottom: 20px;
+}
+
+#linha {
+    border-top: 2px solid var(--cor-principal);
+    height: 1px;
+    overflow: visible;
+    padding: 0;
+    text-align: center;
+}
+#linha::after {
+    /*content é usada com os pseudoelementos ::before e ::after para gerar conteúdo em um elemento.*/
+    content: "OU";
+    position: relative;
+    /* Em é relativo a unidade de medida da tag body*/
+    top: -0.7em;
+    padding: 0 0.3em;
+    background: white;
+}
+
+.opcoes.linha {
+    border-top: 2px solid var(--cor-principal);
+    height: 1px;
+    margin: 10px;
+    overflow: visible;
+}

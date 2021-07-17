@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --cor-principal: #0F73B5;
+    --cor-secundaria: #fff;
+    --cor-terciaria: #1F96CE;
+    --cor-borda: rgb(211, 211, 211);
+}
+
+* {
+    font-family: 'QuickSand', Courier, monospace;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    width: auto;
+    background-image: linear-gradient(var(--cor-principal), var(--cor-secundaria));
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+input,
+#btn {
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+
+}
+
+#btn {
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    border: 0;
+    padding: 10px;
+    /*Coloca a 'mãozinha' no botão por cima*/
+    cursor: pointer;
+}
+
+input {
+    border: 1px solid var(--cor-principal);
+}
+
+input:focus {
+    box-shadow: 5px 5px 5px var(--cor-borda)
+}
+
+#btn:hover {
+    background-color: var(--cor-terciaria);
+}

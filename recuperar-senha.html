@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/base.css">
+        <link rel="stylesheet" href="./css/recuperacao.css">
+        <title>Recuperação de Senha | Serratec</title>
+    </head>
+
+    <body>
+       <!-- div principal -->
+        <div class="box-recuperacao">
+            <div class="logo">
+                <!-- Carregamento da icon do cadeado -->
+                <img src="./img/cadeado branco2.png" alt="cadeado">
+                <h1>Problemas ao entrar?</h1>
+                <p>Insira o seu email, telefone ou nome de usuário e enviaremos um link para você voltar a acessar a sua
+                    conta.</p>
+            </div>
+            <div class="recuperacao">
+                <input placeholder="Entre com seu e-mail ou nome" id="texto" type="text">
+                <button id="btn" onclick="enviarEmail()">Enviar link para login</button>
+            </div>
+
+            <div class="opcoes">
+                <p id="linha"></p>
+            </div>
+
+            <div class="opcoes">
+                <a>Criar nova conta</a>
+            </div>
+
+            <div class="opcoes linha">
+                <a href="login.html">Voltar ao login?</a>
+            </div>
+        </div>
+
+        <script src="./js/recuperacao.js"></script>
+    </body>
+</html>
